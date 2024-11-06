@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input">
+        <h1>BMI Calculator</h1>
+        <p>
+          BMI (Body Mass Index) atau dalam bahasa Indonesia dikenal sebagai
+          Indeks Massa Tubuh (IMT) adalah nilai numerik yang menunjukkan
+          hubungan antara berat badan dan tinggi badan seseorang.
+        </p>
+        <div class="form-container">
+          <label for="weight">Berat (kg):</label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Masukkan Berat Badanmu"
+          />
+
+          <label for="height">Tinggi (cm):</label>
+          <input
+            type="number"
+            id="height"
+            placeholder="Masukkan Tinggi Badanmu"
+          />
+
+          <button onclick="calculateBMI()">Calculate BMI</button>
+          <button onclick="resetBMI()">Reset</button>
+
+          
+        </div>
+      </div>
+
+      <div class="hasil">
+        <div id="result"></div>
+          <div id="bmi-bar"></div>
+        <div class="bmi-table">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Classification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: blue">Under 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td style="color: green">18.5 - 24.9</td>
+                <td>Normal Weight</td>
+              </tr>
+              <tr>
+                <td style="color: orange">25 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td style="color: orangered">30 - 34.9</td>
+                <td>Obesity Class I</td>
+              </tr>
+              <tr>
+                <td style="color: red">35 - 39.9</td>
+                <td>Obesity Class II</td>
+              </tr>
+              <tr>
+                <td style="color: brown">Over 40</td>
+                <td>Obesity Class III</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <footer>
+        &copy;Copyright 2024
+      </footer>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
